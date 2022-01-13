@@ -40,3 +40,80 @@ body {
     display: flex;
     list-style: none;
 }
+
+.nav__element a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+}
+.nav__item:last-child a {
+    padding-right: 0;
+}
+
+.main {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+}
+
+.main__intro {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.intro__info .info__small-heading {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.intro__info .info__heading {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1em;
+    color: var(--main-color);
+}
+.info__icons {
+    margin-top: 60px;
+    display: flex;
+}
+.info__icons .icons__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    width: 150px;
+}
+
+.info__icons .icons__item:first-child {
+    margin-left: 0;
+}
+.info__icons .icons__item::before {
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+}
+.info__icons .icons__item:nth-child(1)::before {
+    content: "\f0c2";
+}
+
+.info__icons .icons__item:nth-child(2)::before {
+    content: "\f3d1";
+}
+
+.info__icons .icons__item:nth-child(3)::before {
+    content: "\f2f2";
+}
+.info__icons .icons__item .item__text {
+    font-weight: 600;
+}
+.intro__form {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .13);
+    border-radius: 8px;
+}
